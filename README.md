@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a full-stack web application built with Node.js. It serves as a learning tool for developers who want to get hands-on experience with Node.js, leveraging the OpenAI API to create an intelligent chatbot. You are going to add code to this project to include support for chat session, using Redis as the persistent store.
+This project is a full-stack web application built with Node.js. It serves as a learning tool for developers who want to get hands-on experience with Node.js, leveraging the OpenAI API to create an intelligent chatbot. You are going to add code to this project to include support for semantic caching, using Redis as the persistent store.
 
 ![Redis](images/redis_logo.png)
 
