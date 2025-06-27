@@ -4,7 +4,7 @@
 
 This project is a full-stack web application built with Node.js. It serves as a learning tool for developers who want to get hands-on experience with Node.js, leveraging the OpenAI API to create an intelligent chatbot. You are going to add code to this project to include support for chat session, using Redis as the persistent store.
 
-![Redis](./images/redis-logo.png)
+![Redis](images/redis_logo.png)
 
 ## Features
 
@@ -18,7 +18,7 @@ Here’s a quick demo of how the project works:
 
 ### Image Example
 
-![Project Screenshot](./images/demo.png)
+![Demo](./images/demo.png)
 
 This project doesn't contain support for semantic caching. This means, the chat is unable to retrieve previous already answered questions. You are going to add code to this project to include support for semantic caching, using Redis as the persistent store. The behavior you want to achieve is that the chatbot will reuse previous messages in the chat session, whether if the user asks the same question with the exact words or with different words, as long as the meaning is the same.
 
