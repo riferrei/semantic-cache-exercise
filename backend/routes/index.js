@@ -1,6 +1,6 @@
 // routes/index.js
 const express = require("express");
-const { handleMessage } = require("../controllers/messageController");
+const {handleMessage} = require("../controllers/messageController");
 
 const router = express.Router();
 

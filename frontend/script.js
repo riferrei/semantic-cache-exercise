@@ -20,10 +20,10 @@ function displayChatbotMessage(message) {
         clearInterval(typingIntervalId);
         const typingIndicator = chatBody.querySelector('.typing-indicator');
         if (typingIndicator) {
-        chatBody.removeChild(typingIndicator);
+            chatBody.removeChild(typingIndicator);
         }
         isChatbotTyping = false;
-    } 
+    }
 
     const chatbotMessage = document.createElement('div');
     chatbotMessage.className = 'chatbot-message';
@@ -44,12 +44,12 @@ function displayTypingIndicator() {
 
         // Start the interval to cycle the typing indicator message
         typingIntervalId = setInterval(() => {
-        if (typingIndicatorMessage === 'Typing...') {
-            typingIndicatorMessage = 'Typing';
-        } else {
-            typingIndicatorMessage += '.';
-        }
-        typingIndicator.innerText = typingIndicatorMessage;
+            if (typingIndicatorMessage === 'Typing...') {
+                typingIndicatorMessage = 'Typing';
+            } else {
+                typingIndicatorMessage += '.';
+            }
+            typingIndicator.innerText = typingIndicatorMessage;
         }, 400);
     }
 }
@@ -69,11 +69,11 @@ async function sendMessage() {
         displayTypingIndicator();
 
         const response = await fetch('http://127.0.0.1:3000/message', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ message: message }),
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({message: message}),
         });
 
         if (!response.ok) {
